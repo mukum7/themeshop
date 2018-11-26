@@ -1,0 +1,363 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ThemeShop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel='stylesheet' href='css/ionicons.css' media='screen' />
+    <link rel="stylesheet" href="css/selectize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="main-navigation">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <!--Main navigation list-->
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Themes</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Plugins</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">More</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-primary theme-button">Sign In</a>
+                        </li>
+                    </ul>
+                    <!--Main navigation list-->
+                </div>
+                <!--end navbar-collapse-->
+            </nav>
+            <!--end navbar-->
+        </div>
+        <!--end container-->
+    </div>
+
+</header>
+
+<section class="hero-banner d-flex inner-banner">
+    <div class="container align-self-center">
+        <div class="row justify-content-center ">
+            <div class="col-xl-10 col-md-12 col-sm-12">
+
+                <div class="hero-text">
+                    <h1>My Cart</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">My Cart</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="themeshop-cart-message">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="alert alert-success" role="alert">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-md-7">
+                            <p><span class="alert-text">Product successfully added to your cart.</span></p>
+                        </div>
+                        <div class="col-lg-4 col-md-5">
+                            <span><a href="" class="btn btn-primary theme-button">Continue Shopping</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="themeshop-cart-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="themeshop-cart">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th scope="col">product</th>
+                            <th scope="col">price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="delete">
+                                    <i class="icon ion-ios-close-outline"></i>
+                                </th>
+                                <td class="product-overview">
+                                    <div class="product-img">
+                                        <a href=""><img src="img/product/cart-product-thumbnail.png" alt=""></a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <a href=""><p class="product-title">ICO Token- Multipurpose theme</p></a>
+                                    </div>
+                                </td>
+                                <td class="product-price">
+                                    $26 <del>$46</del>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="delete">
+                                    <i class="icon ion-ios-close-outline"></i>
+                                </th>
+                                <td class="product-overview">
+                                    <div class="product-img">
+                                        <a href=""><img src="img/product/cart-product-thumbnail.png" alt=""></a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <a href=""><p class="product-title">ICO Token- Multipurpose theme</p></a>
+                                    </div>
+                                </td>
+                                <td class="product-price">
+                                    $26 <del>$46</del>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    total: $52.00
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="payment-details-form">
+                    <form action="">
+                        <div class="form-header">
+                             <h2>personal info <span class="members">Already have an account? <a href="#">Login</a></span></h2>
+                        </div>
+
+                        <div class="row custom-row">
+                            <div class="form-group col-sm-12">
+                                <label for="exampleInputName22">Email Address<span>*</span></label>
+                                <input type="email" class="form-control" id="exampleInputName22" required="" name="">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="exampleInputName11">Full Name<span>*</span></label>
+                                <input type="text" class="form-control" id="exampleInputName11" required="" name="">
+                            </div>
+
+                            <div class="form-group col-sm-6">
+                                <label for="exampleInputName12">Last Name<span>*</span></label>
+                                <input type="text" class="form-control" id="exampleInputName12" required="" name="">
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-header create-account">
+                            <h2>create an account <span class="opt">(optional)</span></h2>
+                        </div>
+
+                        <div class="row custom-row">
+                            <div class="form-group col-sm-12">
+                                <label for="exampleInputName23">Username</label>
+                                <input type="text" class="form-control" id="exampleInputName23" required="" name="">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="exampleInputName13">Password</label>
+                                <input type="password" class="form-control" id="exampleInputName13" required="" name="">
+                            </div>
+
+                            <div class="form-group col-sm-6">
+                                <label for="exampleInputName14">Password Again</label>
+                                <input type="text" class="form-control" id="exampleInputName14" required="" name="">
+                            </div>
+                        </div>
+                        <h2 class="purchase-total">Purchase total: <span>$52</span></h2>
+                        <button type="submit" class="btn btn-primary theme-button">proceed to payment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="featured-plugin">
+                    <h2>featured plugin</h2>
+                    <div class="product-list">
+                        <div class="product-image">
+                            <img src="img/product/product1.png" alt="" class="img-fluid">
+                            <div class="product_price">
+                                <div class="price_tag">
+                                    <del><small>$</small>40</del>
+                                    <span><small>$</small>24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <div class="product-tag">
+                                <span class="badge badge-default badge-purple">Premium</span>
+                                <span class="badge badge-default badge-yellow">New</span>
+                            </div>
+
+                            <div class="product-info">
+                                <h2 class="product-title">ICO Token- Multipurpose theme</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, sem id lobortis interdum, odio lacus luctus lacus.</p>
+
+                                <div class="buy-now">
+                                    <a href="#" class="btn btn-primary theme-button buynow-btn">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="top-footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="img/foot_logo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="footer-text-copy">
+                        <h2>PREMIUM WORDPRESS THEMES FOR ANY DEMANDS</h2>
+                        <p>Sed placerat leo eleifend metus porta feugiat. Vestibulum facilisis tincidunt urna at sodales. Proin congue lorem neque, eu dignissim libero molestie sit amet. Aliquam consequat nulla in diam efficitur, ac bibendum turpis molestie. Donec pharetra velit leo, nec venenatis augue mattis nec. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="theme-separator">
+    <div class="bottom-footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2>themeshop</h2>
+                        <ul>
+                            <li><a href="#">Our blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Register/ Login</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2>other products</h2>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">App Design & Development</a></li>
+                            <li><a href="#">Hosting & Domains</a></li>
+                            <li><a href="#">Other Plugins</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2>support</h2>
+                        <ul>
+                            <li><a href="#">Docs & FAQ’s</a></li>
+                            <li><a href="#">Submit Ticket</a></li>
+                            <li><a href="#">Your Ticket</a></li>
+                            <li><a href="#">Theme Showcase</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2>we recommend</h2>
+                        <ul>
+                            <li><a href="#">Pre-Sales FAQ’s</a></li>
+                            <li><a href="#">Customer Stories</a></li>
+                            <li><a href="#">Hosting Solutions</a></li>
+                            <li><a href="#">Design Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="theme-separator">
+
+    <div class="copyright-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copyright-copy">
+                        <p>© 2016 Themeshop. All Rights Reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon ion-social-googleplus"></i></a></li>
+                            <li><a href="#"><i class="icon ion-social-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/popper.js"></script>
+
+<script src="js/vendor/selectize.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

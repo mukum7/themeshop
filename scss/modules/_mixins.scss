@@ -1,0 +1,45 @@
+// --------------------------------------------------
+// Clearfix
+// --------------------------------------------------
+
+// eg: @include clearfix;
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+
+// --------------------------------------------------
+// Font
+// --------------------------------------------------
+
+// eg: @include font($family: $font-family-base);
+
+@mixin font-face($font-family, $file-path) {
+  $path: ($file-path + $font-family);
+  @font-face {
+    font-family: $font-family;
+    font-weight: normal;
+    font-style: normal;
+    src: url('#{$path}.eot');
+    src: url('#{$path}.eot?#iefix')          format('embedded-opentype'),
+    url('#{$path}.woff')                     format('woff'),
+    url('#{$path}.ttf')                      format('truetype'),
+    url('#{$path}.svg##{$font-family}')      format('svg');
+  }
+}
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

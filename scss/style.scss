@@ -1,0 +1,32 @@
+/*----------------------------------------------------------------------
+
+MASTER STYLESHEET
+
+Project:        ThemeShop
+Version:        1.0
+-----------------------------------------------------------------------*/
+
+// Custom
+// =================================================================
+@import 'modules/mixins'; // Mixins
+@import 'modules/variables'; // Variables
+@import 'global';
+@import 'type';
+@import 'header';
+@import 'buttons';
+@import 'layout';
+@import 'footer';
+
+@include font-face($font-name-Proxima-Semi-Bold,$src);
+@include font-face($font-name-Proxima-Regular,$src);
+@include font-face($font-name-Proxima-Light,$src);
+
+body{
+  font-family: $font-name-Proxima-Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
